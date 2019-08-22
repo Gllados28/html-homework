@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Заявка на похід</title>
+    </head>
+    <body>
+        <a href="index.html">Головна</a>
+        <h3>Заявка на участь в поході "Похід на Чорногірський хребет"</h3>
+        <p>Якщо у Вас декілька чоловік, напишіть про це в коментарі, або подайте заявку на кожного учасника окремо.
+            Просимо також вказати інформацію в разі особливостей в харчуванні, наявні алергії, або якісь непереносимості.</p>
+        <form method="POST" action="https://formspree.io/YOUR-EMAIL-HERE">
+            <label>
+                <input type="radio" checked name="Дата похода">24 серпня - 29 серпня
+            </label>
+            <br>
+            <label>
+                Скидка:
+                <select>
+                    <option selected>не претендую на скидку</option>
+                    <option>5%учасникам груп в соц. мережах "Green trevel"</option>
+                    <option>10% про інтересний відгук про похід</option>
+                    <option>10% учаснику компанії 4 і більше людей</option>
+                    <option>10% за повторний похід з "Green trevel" </option>
+                    <option>15% за п'ятий чи більше похід</option>
+                    <option>20% за вклад в розвиток "Green trevel"</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                П.І.Б. <input type="text" name="user-name">
+            </label>
+            <br>
+            <label>
+                Номер телефона:  <input type="tel" name="tel">
+            </label>
+            <br>
+            <label for="user-email">Електронна адреса: </label>
+            <input id="user-email" type="email" name="user-email">
+            <br>
+            <label>Оберіть стать</label>
+            <label>
+                <input type="radio" name="gender" value="male">Чоловік
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female">Жінка
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other">Інша
+            </label>
+            <br>
+            <label>
+                Ваш вік? <input type="number" name="age" min="18" max="100" step="1">
+            </label>
+            <br>
+            <label>
+                Фіз підготовка <input type="number" name="user-name" min="1" max="5">1- погана, 5 - чудова
+            </label>
+            <br>
+            <label>
+                Коментар:
+            <br>
+                <textarea cols="50" rows="4"></textarea>
+            </label>
+            <br>
+            <label>
+                <sup>В коментарі слід вказати: кількість учасників, досвід в туризмі, особливості в харчуванні, мед протипоказання і інше. </sup>
+            </label>
+            <br>
+            <label>Оренда спорядження: </label>
+            <fieldset>
+                <legend>Мені потрібно:</legend>
+                <label>
+                    Місце в палатці <input type="checkbox" name="Потрібно" value="Місце в палатці">
+                </label>
+                <br>
+                <label>
+                    Рюкзак 68-80л. <input type="checkbox" name="Потрібно" value="Рюкзак 65-80л.">
+                </label>
+                <br>
+                <label>
+                    Спальний мішок <input type="checkbox" name="Потрібно" value="Спальний мішок">
+                </label>
+                <br>
+                <label>
+                    Каремат-коврик <input type="checkbox" name="Потрібно" value="Каремат-коврик">
+                </label>
+                <br>
+                <label>
+                    Дощовик-панчо <input type="checkbox" name="Потрібно" value="Дощовик-панчо">
+                </label>
+                <br>
+                <label>
+                    Трек. палки <input type="checkbox" name="Потрібно" value="Трек. палки">
+                </label>
+                <br>
+                <label>
+                    Бахіли <input type="checkbox" name="Потрібно" value="Бахіли">
+                </label>
+            </fieldset>
+            <label>
+                Підселю в палатку
+                <select>
+                    <option selected>- </option>
+                    <option>1 людину</option>
+                    <option>2 людини</option>
+                    <option>3 людини</option>
+                </select>
+            </label>
+            <br>
+            <input type="submit" value="Підтвердити заявку!">
+        </form>
+    </body>
+</html>
