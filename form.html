@@ -11,58 +11,71 @@
         <h3>Заявка на участь в поході "Похід на Чорногірський хребет"</h3>
         <p>Якщо у Вас декілька чоловік, напишіть про це в коментарі, або подайте заявку на кожного учасника окремо.
             Просимо також вказати інформацію в разі особливостей в харчуванні, наявні алергії, або якісь непереносимості.</p>
-        <form method="POST" action="https://formspree.io/YOUR-EMAIL-HERE">
+        <form method="POST" action="https://formspree.io/slparaschak@gmail.com">
+            <!--
+                <label> Дата похода: </label>
             <label>
-                <input type="radio" checked name="Дата похода">24 серпня - 29 серпня
+                <input type="radio" checked name="Дата похода" volue="24 серпня - 29 серпня">24 серпня - 29 серпня
+            </label>
+            <label>
+                <input type="radio" name="Дата похода" volue="8 вересня - 13 вересня">8 вересня - 13 вересня
+            </label>
+            <label>
+                -->
+               Дата похода:
+               <select name="Дата похода">
+                   <option volue="24 серпня - 29 серпня" selected> 24 серпня - 29 серпня </option>
+                   <option volue="8 вересня - 13 вересня"> 8 вересня - 13 вересня </option>
+               </select>
             </label>
             <br>
             <label>
                 Скидка:
-                <select>
-                    <option selected>не претендую на скидку</option>
-                    <option>5%учасникам груп в соц. мережах "Green trevel"</option>
-                    <option>10% про інтересний відгук про похід</option>
-                    <option>10% учаснику компанії 4 і більше людей</option>
-                    <option>10% за повторний похід з "Green trevel" </option>
-                    <option>15% за п'ятий чи більше похід</option>
-                    <option>20% за вклад в розвиток "Green trevel"</option>
+                <select name="Cкидка:">
+                    <option volue="не претендую на скидку" selected>не претендую на скидку</option>
+                    <option volue="5%учасникам груп в соц. мережах "Green trevel"">5%учасникам груп в соц. мережах "Green trevel"</option>
+                    <option volue="10% про інтересний відгук про похід">10% про інтересний відгук про похід</option>
+                    <option volue="10% учаснику компанії 4 і більше людей">10% учаснику компанії 4 і більше людей</option>
+                    <option volue="10% за повторний похід з "Green trevel"">10% за повторний похід з "Green trevel" </option>
+                    <option volue="15% за п'ятий чи більше похід">15% за п'ятий чи більше похід</option>
+                    <option volue="20% за вклад в розвиток "Green trevel"">20% за вклад в розвиток "Green trevel"</option>
                 </select>
             </label>
             <br>
             <label>
-                П.І.Б. <input type="text" name="user-name">
+                П.І.Б. <input type="text" name="П.І.Б.">
             </label>
             <br>
             <label>
-                Номер телефона:  <input type="tel" name="tel">
+                Номер телефона:  <input type="tel" name="Телефон:">
             </label>
             <br>
             <label for="user-email">Електронна адреса: </label>
-            <input id="user-email" type="email" name="user-email">
+            <input id="user-email" type="email" name="Електронна адреса:">
             <br>
             <label>Оберіть стать</label>
             <label>
-                <input type="radio" name="gender" value="male">Чоловік
+                <input type="radio" name="стать" value="Чоловік">Чоловік
             </label>
             <label>
-                <input type="radio" name="gender" value="female">Жінка
+                <input type="radio" name="стать" value="Жінка">Жінка
             </label>
             <label>
-                <input type="radio" name="gender" value="other">Інша
-            </label>
-            <br>
-            <label>
-                Ваш вік? <input type="number" name="age" min="18" max="100" step="1">
+                <input type="radio" name="стать" value="Інша">Інша
             </label>
             <br>
             <label>
-                Фіз підготовка <input type="number" name="user-name" min="1" max="5">1- погана, 5 - чудова
+                Ваш вік? <input type="number" name="Вік:" min="18" max="100" step="1">
+            </label>
+            <br>
+            <label>
+                Фіз підготовка <input type="number" name="Фіз. підготовка" min="1" max="5">1- погана, 5 - чудова
             </label>
             <br>
             <label>
                 Коментар:
             <br>
-                <textarea cols="50" rows="4"></textarea>
+                <textarea name="Коментар" cols="50" rows="4"></textarea>
             </label>
             <br>
             <label>
@@ -102,11 +115,11 @@
             </fieldset>
             <label>
                 Підселю в палатку
-                <select>
-                    <option selected>- </option>
-                    <option>1 людину</option>
-                    <option>2 людини</option>
-                    <option>3 людини</option>
+                <select name="Підселю в палатку">
+                    <option volue="-" selected>- </option>
+                    <option volue="1 людину">1 людину</option>
+                    <option volue="2 людини">2 людини</option>
+                    <option volue="3 людини">3 людини</option>
                 </select>
             </label>
             <br>
